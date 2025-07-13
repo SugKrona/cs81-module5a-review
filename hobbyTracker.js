@@ -43,3 +43,11 @@ console.log("Total time spent:", totalTime(hobbyLog), "minutes");
 console.log("Unique hobbies:", uniqueHobbies(hobbyLog));
 console.log("Sessions longer than 30 min:", longSessions(hobbyLog, 30));
 console.log("Number of relaxed sessions:", countMood(hobbyLog, "relaxed"));
+
+// IMPROVEMENT SUGGESTION
+// An improvement for the hobbyTracker.js code is to add a function that calculates the total time spent for each unique hobby. 
+// This offers a practical and insightful analytical capability for users, directly leveraging the data to show specific time commitments per activity.
+
+//Add Test Case 
+//This will display all unique moods that are part of the of the hobbylog 
+console.log("All unique moods:", [...new Set(hobbyLog.map(entry => entry.mood))]);
